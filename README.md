@@ -6,16 +6,17 @@ The repository contains a model for semantic segmentation of the documents.
 
 Model is trained on MIDV-500: [A Dataset for Identity Documents Analysis and Recognition on Mobile Devices in Video Stream](https://arxiv.org/abs/1807.05786).
 
-## Training
+### Training
 `python midv500models/train.py -c midv500models/configs/2021-05-14.yaml \
                               -i <path to train>`
 
+### Inference
 `python midv500models/inference.py -c midv500models/configs/2021-05-14.yaml \
                                   -i <path to images> \
                                   -o <path to save preidctions>
                                   -w <path to weights>`
 
-Example of training images
+### Example of training images
 
 ![loss.png](./asset/training.png)
 
@@ -67,7 +68,7 @@ The model is train on p3.x2large machine with 1 GPU.
 
 ![loss.png](./asset/loss.png)
 
-## Inference results
+### Inference results
 
 The model is able to generalize well with test images, which are completely different from the training images.
 
