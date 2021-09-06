@@ -4,7 +4,8 @@ The repository contains a model for semantic segmentation of the documents.
 
 ## Dataset
 
-Model is trained on MIDV-500: [A Dataset for Identity Documents Analysis and Recognition on Mobile Devices in Video Stream](https://arxiv.org/abs/1807.05786).
+The U-Net segmentation model is trained on MIDV-500: [A Dataset for Identity Documents Analysis and Recognition on Mobile Devices in Video Stream](https://arxiv.org/abs/1807.05786).
+The model is trained with 50 subtypes of IDs including 17 types of ID cards, 14 types of passports, 13 types of driving licenses, and 6 other identity documents of various countries. Each subtype contains 10 unique photos with 30 different angle, blurriness, closeness, and focus. Total of 15,000 images are being used for our experiment.
 
 ### Training
 `python midv500models/train.py -c midv500models/configs/2021-05-14.yaml \
